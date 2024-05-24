@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.center {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+body {
+    height: 100%;
+    overflow-x: hidden;
+    background-color: rgb(14, 14, 14);
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+/* NAV BAR */
+nav {
+    padding: 20px 0;
+}
+
+.logo {
+    width: 50%;
+    text-align: center;
+}
+
+.logo img {
+    width: 80px;
+}
+
+.menu {
+    padding-top: 30px;
+    width: 50%;
+    text-align: center;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.menu a:hover {
+    color: #ffa083;
+}
+
+/* FIM DA NAV */
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    grid-gap: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.card {
+    background-color: #2b2b2b;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(33.33% - 20px);
+    /* Ajuste a largura dos cards conforme necessário */
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.card:hover {
+    background-color: #1b1b1b;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    color: azure;
+}
+
+.menu-item h2 {
+    color: #ffa083;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.menu-item img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.price-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    position: relative;
+}
+
+.price {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffa083;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+/* Botão "Adicionar ao Pedido" */
+.add-to-cart-btn {
+    background-color: #ffa083;
+    color: rgb(14, 14, 14);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #ffa083;
+}
+
+
+.order-btn:hover {
+    background-color: #ffa083;
+}
+
+/* Botão "Finalizar Pedido" */
+.finalizar-pedido {
+    background-color: #ffa083;
+    color: rgb(14, 14, 14);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+
+.icone-finalizar {
+    width: 30px;
+    /* Ajuste o tamanho do ícone conforme necessário */
+    height: 30px;
+    margin-right: 5px;
+    /* Ajuste o espaçamento entre o ícone e o texto conforme necessário */
+    vertical-align: middle;
+    /* Alinha verticalmente o texto com a imagem */
+}
+
+
+/* Media queries para dispositivos móveis */
+@media only screen and (max-width: 768px) {
+    .center {
+        padding: 0 5%;
+    }
+
+    .logo,
+    .menu {
+        width: 100%;
+    }
+
+    .menu-container {
+        justify-content: center;
+    }
+
+    .card {
+        width: 100%;
+        /* Largura dos cards ocupando 100% do espaço */
+        flex-basis: 100%;
+        /* Define a base flexível do card para 100% */
+        overflow: hidden;
+        /* Oculta o conteúdo que excede as dimensões do card */
+    }
+
+    .menu-item p {
+        font-size: 0.9em;
+        /* Diminui o tamanho do texto proporcionalmente */
+    }
+
+    .menu-item h2 {
+        font-size: 1.2em;
+        /* Diminui o tamanho do texto proporcionalmente */
+    }
+}

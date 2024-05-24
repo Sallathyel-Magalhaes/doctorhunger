@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.center {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+
+body {
+  height: 100%;
+  overflow-x: hidden;
+  background-color: rgb(14, 14, 14);
+  color: azure;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+nav {
+  padding: 20px 0;
+}
+
+.logo {
+  width: 50%;
+  text-align: center;
+}
+
+.logo img {
+  width: 80px;
+}
+
+.menu {
+  padding-top: 30px;
+  width: 50%;
+  text-align: center;
+}
+
+.menu a {
+  color: azure;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.menu a:hover {
+  color: #ffa083;
+}
+
+main {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.info-section {
+  background-color: #141414;
+  padding: 15px;
+  text-align: center;
+  margin-top: -10px;
+  border-radius: 10px;
+}
+
+.info-section h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.info-section p {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.info-section img {
+  width: 300px;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-section .contact-info {
+  margin-bottom: 30px;
+}
+
+.info-section .contact-info p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+footer {
+  /* Seus estilos anteriores para o rodapé aqui */
+  position: relative;
+  /* Outros estilos que você desejar para o rodapé */
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #333;
+  margin: 0 10px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.social-icon img {
+  width: 25px;
+  height: auto;
+}
+
+.social-icon:hover {
+  background-color: #ffa083;
+}
+
+
+
+/* Media queries para dispositivos móveis */
+@media only screen and (max-width: 768px) {
+  .center {
+    padding: 0 5%;
+  }
+
+  .logo,
+  .menu {
+    width: 100%;
+  }
+
+  .info-section img {
+    width: 90%;
+  }
+}

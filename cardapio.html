@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="shortcut icon" href="components/img/logo_pequena.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/cardapio.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoctorHunger</title>
+
+</head>
+
+<body class="fade-in">
+    <nav>
+        <div class="center">
+            <div class="logo"><img src="components/img/logo_grande.png"></div><!--logo-->
+            <div class="menu">
+                <a href="index.html">Início</a>
+                <a href="cardapio.html">Cardápio</a>
+                <a href="info.html">Informações</a>
+            </div><!--menu-->
+        </div> <!--center-->
+    </nav>
+
+    <button class="finalizar-pedido" onclick="criarPedido()">
+        <img src="components/img/icons8-carrinho-24.png" alt="Finalizar Pedido" class="icone-finalizar">
+        Finalizar Pedido
+    </button>
+
+
+    <div class="menu-container">
+
+        <div class="card">
+            <div class="menu-item">
+                <img src="components/img/hamburguer 1.png" alt="Big-Smash-Max">
+                <div>
+                    <h2>Big Smash Max</h2>
+                    <p>Pão Brioche, Bacon, Queijo Quale, Cheadar, Blend Artesanal 250g, Ovo, Salada, Molho Especial
+                        e
+                        Cebola Caramelizada.</p>
+                    <div class="price-container">
+                        <span class="price">R$ 25,90</span>
+                    </div>
+                </div>
+                <button class="add-to-cart-btn">Adicionar ao Pedido</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="menu-item">
+                <img src="components/img/hamburguer 2.png" alt="Middle-Smash-Burger">
+                <div>
+                    <h2>Middle Smash Burger</h2>
+                    <p>Pão Brioche, Queijo Quale, Cheadar, Blend Artesanal 200g, Salada.</p>
+                    <div class="price-container">
+                        <span class="price">R$ 19,90</span>
+                    </div>
+                </div>
+                <button class="add-to-cart-btn">Adicionar ao Pedido</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="menu-item">
+                <img src="components/img/hamburguer 3.png" alt="Little-Burger-Doct">
+                <div>
+                    <h2>Little Burger Doct</h2>
+                    <p>Pão Brioche, Queijo Quale, Blend Artesanal 150g, Salada.</p>
+                    <div class="price-container">
+                        <span class="price">R$ 12,90</span>
+                    </div>
+                </div>
+                <button class="add-to-cart-btn">Adicionar ao Pedido</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="menu-item">
+                <img src="components/img/batata_frita.png" alt="batata-frita">
+                <div>
+                    <h2>Batata Frita</h2>
+                    <p>Batata Frita, fresca, sem óleo.</p>
+                    <div class="price-container">
+                        <span class="price">R$ 12,00</span>
+                    </div>
+                </div>
+                <button class="add-to-cart-btn">Adicionar ao Pedido</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="menu-item">
+                <img src="components/img/sanduiche-simples.png" alt="sanduiche-simples">
+                <div>
+                    <h2>Sanduiche Simples</h2>
+                    <p>Pão de Forma, Queijo Quale, Presunto de Peru e Salada.</p>
+                    <div class="price-container">
+                        <span class="price">R$ 10,00</span>
+                    </div>
+                </div>
+                <button class="add-to-cart-btn">Adicionar ao Pedido</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="menu-item">
+                <img src="components/img/frango-arabe.png" alt="frango-arabe">
+                <div>
+                    <h2>Pão Árabe com Frango</h2>
+                    <p>Pão Árabe com Frango Desfiado.</p>
+                    <div class="price-container">
+                        <span class="price">R$ 11,90</span>
+                    </div>
+                </div>
+                <button class="add-to-cart-btn">Adicionar ao Pedido</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="menu-item">
+                <img src="components/img/croissant.png" alt="croissant">
+                <div>
+                    <h2>Croissant de Presunto e Queijo</h2>
+                    <p>Croissant de Presunto de Peru e Queijo Quale, feito no forno.</p>
+                    <div class="price-container">
+                        <span class="price">R$ 5,00</span>
+                    </div>
+                </div>
+                <button class="add-to-cart-btn">Adicionar ao Pedido</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="menu-item">
+                <img src="components/img/pizza.png" alt="pizza">
+                <div>
+                    <h2>Pizza de Calabreza</h2>
+                    <p>Pizza de Calabreza, feita no forno de pedra, serve 4 pessoas.</p>
+                    <div class="price-container">
+                        <span class="price">R$ 22,90</span>
+                    </div>
+                </div>
+                <button class="add-to-cart-btn">Adicionar ao Pedido</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="menu-item">
+                <img src="components/img/porção-carne.png" alt="carne">
+                <div>
+                    <h2>Carne com Salada</h2>
+                    <p>Carne do Sol, com Alface, Tomate e Cebola, serve 3 pessoas.</p>
+                    <div class="price-container">
+                        <span class="price">R$ 23,90</span>
+                    </div>
+                </div>
+                <button class="add-to-cart-btn">Adicionar ao Pedido</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="menu-item">
+                <img src="components/img/suco de laranja.png" alt="Suco-Laranja">
+                <div>
+                    <h2>Suco de Laranja</h2>
+                    <p>Suco de Laranja, feito da fruta, fresco.</p>
+                    <div class="price-container">
+                        <span class="price">R$ 6,00</span>
+                    </div>
+                </div>
+                <button class="add-to-cart-btn">Adicionar ao Pedido</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="menu-item">
+                <img src="components/img/suco_de_maracuja.png" alt="Suco-Maracuja">
+                <div>
+                    <h2>Suco de Maracujá</h2>
+                    <p>Suco de Maracujá, feito da fruta, fresco.</p>
+                    <div class="price-container">
+                        <span class="price">R$ 7,50</span>
+                    </div>
+                </div>
+                <button class="add-to-cart-btn">Adicionar ao Pedido</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="menu-item">
+                <img src="components/img/suco_de_goiaba.png" alt="Suco-Goiaba">
+                <div>
+                    <h2>Suco de Goiaba</h2>
+                    <p>Suco de Goiaba, feito da fruta, fresco.</p>
+                    <div class="price-container">
+                        <span class="price">R$ 6,00</span>
+                    </div>
+                </div>
+                <button class="add-to-cart-btn">Adicionar ao Pedido</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="menu-item">
+                <img src="components/img/suco-de-manga.png" alt="Suco-Manga">
+                <div>
+                    <h2>Suco de Manga</h2>
+                    <p>Suco de Manga, feito da fruta, fresco.</p>
+                    <div class="price-container">
+                        <span class="price">R$ 7,00</span>
+                    </div>
+                </div>
+                <button class="add-to-cart-btn">Adicionar ao Pedido</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="menu-item">
+                <img src="components/img/suco-limao.png" alt="Suco-Limao">
+                <div>
+                    <h2>Suco de Limão</h2>
+                    <p>Suco de Limão, feito da fruta, fresco.</p>
+                    <div class="price-container">
+                        <span class="price">R$ 4,00</span>
+                    </div>
+                </div>
+                <button class="add-to-cart-btn">Adicionar ao Pedido</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="menu-item">
+                <img src="components/img/suco_de_acerola.png" alt="Suco-Acerola">
+                <div>
+                    <h2>Suco de Acerola</h2>
+                    <p>Suco de Acerola, feito da fruta, fresco.</p>
+                    <div class="price-container">
+                        <span class="price">R$ 5,00</span>
+                    </div>
+                </div>
+                <button class="add-to-cart-btn">Adicionar ao Pedido</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="menu-item">
+                <img src="components/img/fanta-350ml.png" alt="fanta">
+                <div>
+                    <h2>Fanta Laranja</h2>
+                    <p>Fanta Laranja, Lata 350ml, Gelado.</p>
+                    <div class="price-container">
+                        <span class="price">R$ 4,50</span>
+                    </div>
+                </div>
+                <button class="add-to-cart-btn">Adicionar ao Pedido</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="menu-item">
+                <img src="components/img/coca-cola-350ml.png" alt="Coca-Cola">
+                <div>
+                    <h2>Coca Cola</h2>
+                    <p>Coca Cola Clássica, Lata 350ml, Gelado.</p>
+                    <div class="price-container">
+                        <span class="price">R$ 5,00</span>
+                    </div>
+                </div>
+                <button class="add-to-cart-btn">Adicionar ao Pedido</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="menu-item">
+                <img src="components/img/guarana-antarctica-350ml.png" alt="Guarana-Antarctica">
+                <div>
+                    <h2>Guarana Antarctica</h2>
+                    <p>Guarana Antarctica, Lata 3500ml, Gelado.</p>
+                    <div class="price-container">
+                        <span class="price">R$ 4,50</span>
+                    </div>
+                </div>
+                <button class="add-to-cart-btn">Adicionar ao Pedido</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/addPedido.js"></script>
+    <script src="js/finalizarPedido.js"></script>
+    <script src="js/transition.js"></script>
+
+</body>
+
+</html>
