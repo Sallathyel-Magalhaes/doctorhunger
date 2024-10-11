@@ -1,0 +1,110 @@
+[
+    {
+        "nome": "Big Smash Max",
+        "descricao": "Pão Brioche, Bacon, Queijo Quale, Cheadar, Blend Artesanal 250g, Ovo, Salada, Molho Especial e Cebola Caramelizada.",
+        "preco": "R$ 25,90",
+        "imagem": "components/img/hamburguer 1.png"
+    },
+    {
+        "nome": "Middle Smash Burger",
+        "descricao": "Pão Brioche, Queijo Quale, Cheadar, Blend Artesanal 200g, Salada.",
+        "preco": "R$ 19,90",
+        "imagem": "components/img/hamburguer 2.png"
+    },
+    {
+        "nome": "Little Burger Doct",
+        "descricao": "Pão Brioche, Queijo Quale, Blend Artesanal 150g, Salada.",
+        "preco": "R$ 12,90",
+        "imagem": "components/img/hamburguer 3.png"
+    },
+    {
+        "nome": "Batata Frita",
+        "descricao": "Batata Frita, fresca, sem óleo.",
+        "preco": "R$ 12,00",
+        "imagem": "components/img/batata_frita.png"
+    },
+    {
+        "nome": "Sanduiche Simples",
+        "descricao": "Pão de Forma, Queijo Quale, Presunto de Peru e Salada.",
+        "preco": "R$ 10,00",
+        "imagem": "components/img/sanduiche-simples.png"
+    },
+    {
+        "nome": "Pão Árabe com Frango",
+        "descricao": "Pão Árabe com Frango Desfiado.",
+        "preco": "R$ 11,90",
+        "imagem": "components/img/frango-arabe.png"
+    },
+    {
+        "nome": "Croissant de Presunto e Queijo",
+        "descricao": "Croissant de Presunto de Peru e Queijo Quale, feito no forno.",
+        "preco": "R$ 5,00",
+        "imagem": "components/img/croissant.png"
+    },
+    {
+        "nome": "Pizza de Calabreza",
+        "descricao": "Pizza de Calabreza, feita no forno de pedra, serve 4 pessoas.",
+        "preco": "R$ 22,90",
+        "imagem": "components/img/pizza.png"
+    },
+    {
+        "nome": "Carne com Salada",
+        "descricao": "Carne do Sol, com Alface, Tomate e Cebola, serve 3 pessoas.",
+        "preco": "R$ 23,90",
+        "imagem": "components/img/porção-carne.png"
+    },
+    {
+        "nome": "Suco de Laranja",
+        "descricao": "Suco de Laranja, feito da fruta, fresco.",
+        "preco": "R$ 6,00",
+        "imagem": "components/img/suco de laranja.png"
+    },
+    {
+        "nome": "Suco de Maracujá",
+        "descricao": "Suco de Maracujá, feito da fruta, fresco.",
+        "preco": "R$ 7,50",
+        "imagem": "components/img/suco_de_maracuja.png"
+    },
+    {
+        "nome": "Suco de Goiaba",
+        "descricao": "Suco de Goiaba, feito da fruta, fresco.",
+        "preco": "R$ 6,00",
+        "imagem": "components/img/suco_de_goiaba.png"
+    },
+    {
+        "nome": "Suco de Manga",
+        "descricao": "Suco de Manga, feito da fruta, fresco.",
+        "preco": "R$ 7,00",
+        "imagem": "components/img/suco-de-manga.png"
+    },
+    {
+        "nome": "Suco de Limão",
+        "descricao": "Suco de Limão, feito da fruta, fresco.",
+        "preco": "R$ 4,00",
+        "imagem": "components/img/suco-limao.png"
+    },
+    {
+        "nome": "Suco de Acerola",
+        "descricao": "Suco de Acerola, feito da fruta, fresco.",
+        "preco": "R$ 5,00",
+        "imagem": "components/img/suco_de_acerola.png"
+    },
+    {
+        "nome": "Fanta Laranja",
+        "descricao": "Fanta Laranja, Lata 350ml, Gelado.",
+        "preco": "R$ 4,50",
+        "imagem": "components/img/fanta-350ml.png"
+    },
+    {
+        "nome": "Coca Cola",
+        "descricao": "Coca Cola Clássica, Lata 350ml, Gelado.",
+        "preco": "R$ 5,00",
+        "imagem": "components/img/coca-cola-350ml.png"
+        },
+    {
+        "nome": "Guarana Antarctica",
+        "descricao": "Guarana Antarctica, Lata 3500ml, Gelado.",
+        "preco": "R$ 4,50",
+        "imagem": "components/img/guarana-antarctica-350ml.png"
+    }
+]

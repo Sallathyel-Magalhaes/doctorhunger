@@ -100,6 +100,7 @@ section.sobre {
     color: azure;
     font-size: 14px;
     text-align: justify;
+    width: 50%;
 }
 
 .texto-sobre button {
@@ -197,7 +198,13 @@ section.sobre {
 
     .texto-sobre {
         margin-top: 0;
-        text-align: justify;
+        text-align: center;
         margin-bottom: 100px;
+    }
+
+    .texto-sobre p {
+        text-align: center;
+        width: 100%;
+        
     }
 }

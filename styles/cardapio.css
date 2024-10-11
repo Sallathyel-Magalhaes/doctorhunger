@@ -5,6 +5,27 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #e6735c #444;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #444;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #e6735c;
+    border-radius: 20px;
+    border: 3px solid #444;
+}
+
 .center {
     display: flex;
     flex-wrap: wrap;
@@ -97,7 +118,7 @@ nav {
 }
 
 .menu-item h2 {
-    color: #ffa083;
+    color: rgb(255, 160, 131);
     margin-bottom: 15px;
     font-size: 1.2em;
 }
@@ -175,6 +196,152 @@ nav {
     /* Alinha verticalmente o texto com a imagem */
 }
 
+/* Modal do Carrinho */
+#carrinho-modal {
+    color: white;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 80%;
+    max-width: 600px;
+    height: 80%;
+    background-color: #2b2b2b;
+    border-radius: 8px;
+    padding: 20px;
+    z-index: 1000;
+    overflow-y: auto; /* Adiciona rolagem vertical */
+    display: none; /* Altere para block via JavaScript quando necessário */
+}
+
+/* Itens do Carrinho */
+#carrinho-itens > div {
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+#carrinho-itens div {
+    margin-bottom: 10px;
+}
+
+#carrinho-itens h3 {
+    color: #ffa083;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+#carrinho-itens p {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+/* Botão "Finalizar Pedido" no Modal */
+#carrinho-modal button {
+    background-color: #ffa083;
+    color: rgb(14, 14, 14);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    transition: background-color 0.3s ease;
+}
+
+#carrinho-modal button:hover {
+    background-color: #e6735c;
+}
+
+/* Fundo Escuro para o Modal */
+#carrinho-modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none; /* Altere para block via JavaScript quando necessário */
+}
+
+/* Fechar Modal */
+#carrinho-modal .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+#carrinho-modal .close-btn:hover {
+    color: #ffa083;
+}
+
+
+/* Estilos do Formulário */
+#carrinho-modal input[type="text"],
+#carrinho-modal select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #000;
+    font-size: 1em;
+}
+
+#carrinho-modal button {
+    width: 30%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ffa083;
+    color: #000;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#carrinho-modal button:hover {
+    background-color: #ff7b50;
+}
+
+#carrinho-modal #total-pedido {
+    color: #ffa083;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.search {
+    text-align: center;
+}
+
+#search-input {
+    width: 50%;
+    padding: 10px;
+    margin: 0 auto 20px;
+    border: 1px solid #ffa083;
+    border-radius: 4px;
+    background-color: #2b2b2b;
+    color: white;
+    font-size: 1em;
+    outline: none; /* Remove a borda ao receber foco */
+}
+
+#search-input::placeholder {
+    color: rgba(255, 255, 255, 0.5); /* Define a cor do texto do placeholder */
+}
+
+
 
 /* Media queries para dispositivos móveis */
 @media only screen and (max-width: 768px) {
@@ -210,3 +377,4 @@ nav {
         /* Diminui o tamanho do texto proporcionalmente */
     }
 }
+

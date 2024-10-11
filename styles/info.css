@@ -5,6 +5,27 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #e6735c #444;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #444;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #e6735c;
+  border-radius: 20px;
+  border: 3px solid #444;
+}
+
 .center {
   display: flex;
   flex-wrap: wrap;
@@ -126,6 +147,7 @@ footer {
   background-color: #333;
   margin: 0 10px;
   margin-bottom: 10px;
+  margin-top: -20px;
   transition: background-color 0.3s ease;
 }
 
@@ -155,3 +177,8 @@ footer {
     width: 90%;
   }
 }
+
+  iframe {
+    width: 80vw;
+    height: 30vh;
+  }
